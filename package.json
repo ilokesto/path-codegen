@@ -1,0 +1,36 @@
+{
+  "name": "@ilokesto/path-codegen",
+  "version": "0.0.1",
+  "description": "A CLI tool to generate path constants from a directory structure.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "path-codegen": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "codegen",
+    "path",
+    "generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  }
+}
